@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .bag1{
+            width:100%;
+            height:990px;
+            background:url(images/bag1.png);
+            
+        }
+        .bag1 .top{
+            width:100%;
+            height:990px;
+            background:url(images/bag.png);
+            
+        }
+        .font{
+            font-family:Montserrat ExtraLight;
+            text-align:center;
+  
+        }
+        .ftitle{
+            font-size:62px;
+            color:white;
+        }
+        .fctitle{
+            font-size:42px;
+            font-weight:300;height:50px;line-height:50px;
+            color:#c5c3bf;
+        }
+        .fcontent{
+            font-size:18px;
+            font-weight:100;
+            height:30px;
+            line-height:30px;
+            color:#c5c3bf;
+
+        }
+        .flist{
+            font-size:14px;
+            color:#c5c3bf;
+            text-align:left;
+            height:24px;
+            line-height:24px;
+        }
+        .ficon{
+            font-size:14px;
+            color:#c5c3bf;
+            text-align:left;text-indent:20px;
+            height:50px;
+            line-height:50px;
+        }
+        .flit{
+            font-size:14px;
+            color:#c5c3bf;   
+        }
+        .fphoto{
+            margin-bottom:10px;margin-top:20px;
+            text-align:center;color:#141414;
+            font-weight:500;
+        }
+        .fphocont{
+            color:#141414;text-align:left;
+            font-size:14px;height:18px;line-height:18px;
+        }
+        .title{
+            padding-top:210px;
+            margin-bottom:88px;
+            font-weight:200;
+            
+        }
+        .text{
+            
+            
+            margin-bottom:100px;
+        }
+        .accont{
+            width:970px;
+            height:250px;
+            border:1px solid #5b574e;
+            margin:0 auto;
+        }
+        
+        .txt{
+            width:290px;
+            height:50px;
+            border:1px solid #5b574e;
+            margin-right:30PX;
+            outline:none;
+            background-color:transparent;
+            box-sizing:border-box;
+            vertical-align:middle;
+            color:#fff;
+            /*float:left;*/
+        }
+        .btn{
+            width:127px;
+            height:50px;
+            background:#fff;
+            border:1px solid #5b574e;
+            outline:none;
+            /*float:left;*/
+            vertical-align:middle;
+        }
+        .btn:hover{
+            background:#5b574e;
+        }
+        .section{
+            width:100%;
+            height:700px;
+            background:#fff;
+        }
+        .feature{
+            width:1045px;
+            height:auto;
+            margin:0 auto;
+            
+        }
+        .feature1,.feature2{
+            width:450px;
+            height:160px;
+            float:left;
+            margin-right:140px;
+        }
+        .feature2{
+            margin-right:0;
+        }
+        .feature .image{
+            width:70px;
+            height:160px;
+            text-align:center;
+            position:relative;
+            float:left;
+            margin-right:10px;
+        }
+        .feature img{
+            /*vertical-align:middle;*/
+            position:absolute;
+            margin:auto;
+            display:block;
+            left:0;right:0;
+        }
+        .bag2{
+            width:100%;
+            height:800px;
+            background:url(images/bag1.png);
+            position:relative;
+        }
+        .bag2 .mask2{
+            width:100%;
+            height:800px;
+            background:url(images/Background.png);
+        }
+        .product{
+            width:500px;
+            height:450px;
+            float:left;
+            position:absolute;
+            margin:auto;
+            top:0;bottom:0;
+            /*border:1px solid #5b574e;*/
+            margin-left:100px;
+            font-size:0;
+        }
+        
+        .btncheck{
+            margin-top:200px;
+            margin-right:30px;
+            width:220px;
+            height:60px;
+            background-color:transparent;
+            border:1px solid #5b574e;
+            outline:none;
+            vertical-align:middle;
+            
+        }
+        .btncheck:hover{
+            background:#fff;
+            color:#141414;
+        }
+        .datum{
+            width:700px;
+            height:500px;
+            border:1px solid #5b574e;
+            border-radius:20px;
+            float:right;
+            position:absolute;
+            margin:auto;
+            top:0;bottom:0;
+            margin-left:620px;
+        }
+        .datum .content{
+            width:580px;
+            height:440px;
+            border:1px solid #5b574e;
+            margin:0 auto;
+            margin-top:30px;
+            background:#fff;
+        }
+        .datum .content .content1{
+            width:150px;
+            height:auto;
+            float:left;
+            margin-right:24px;
+        }
+        .datum .content .content1:nth-of-type(1){
+            margin-left:35px;
+        }
+        .content1:nth-of-type(3){
+            margin-right:0px;
+        }
+        .datum .content .photo1{
+            width:150px;
+            
+        }
+        #product{
+            width:100%;
+            height:auto;
+            
+        }
+        #product .center{
+            
+            width:900px;
+            height:410px;
+            margin:0 auto;
+        }
+        .pro{
+            width:260px;
+            height:280px;
+            float:left;
+            margin-left:20px;
+            margin-right:20px;
+            margin-bottom:190px;
+            position:relative;
+        }
+        #product .pro img{
+            position:absolute;
+            margin:auto;
+            display:block;
+            left:0;right:0;
+            
+        }
+        #product .center2{
+            width:980px;
+            height:880px;
+            margin:0 auto;
+        }
+        #product .center2 img:nth-of-type(1){
+            float:left;
+            margin-right:100px;
+            margin-bottom:80px;
+        }
+        #product .center2 .detile:nth-of-type(1){
+            width:310px;
+            height:246px;
+            margin:0 auto;
+            margin-top:70px;
+            float:left;
+        }
+        #product .center2 .detile:nth-of-type(2){
+            width:310px;
+            height:246px;
+            margin:0 auto;
+            float:left;
+            margin-right:100px;
+            margin-top:70px;
+        }
+        #product .center2 img:nth-of-type(2){
+            float:left;
+            margin-bottom:100px;
+            
+        }
+        #product .crew{
+            width:980px;
+            height:780px;
+            margin:0 auto;
+        }
+        #product .crew .photo{
+            width:470px;
+            height:340px;
+            background:url(images/张思远大.png) no-repeat;
+            margin-bottom:30px;
+            float:left;
+        }
+        /*#product .crew img:nth-of-type(odd){
+            margin-right:30px;
+        }*/
+        #product .crew .mask{
+            background:#000;
+            width:470px;
+            height:340px;
+            position:relative;
+            float:left;
+            margin:10px;
+        }
+        #product .crew .mask .facebook{
+            background:url(images/Facebook.png) no-repeat;
+            position:absolute;
+            top:200px;
+            width:51px;
+            height:54px;
+            left:134px;
+            display:none;
+        }
+        #product .crew .mask .twitter{
+            background:url(images/Twitter.png) no-repeat;
+            position:absolute;
+            top:200px;
+            width:51px;
+            height:54px;
+            left:215px;
+            display:none;
+        }
+        #product .crew .mask .insta{
+            background:url(images/Instagram.png) no-repeat;
+            position:absolute;
+            top:200px;
+            width:51px;
+            height:54px;
+            left:296px;
+            display:none;
+        }
+        #product .crew .mask .wenzi{
+            position:absolute;
+            color:#fff;
+            font-family:Montserrat ExtraLight;
+            text-align:center;
+            font-size:20px;
+            left:50%;
+            transform:translate(-50%);
+            top:50px;
+            display:none;
+        }
+        #product .crew .mask .ss{
+            position:absolute;
+            color:#c5c3bf;
+            font-size:16px;
+            font-family:Montserrat ExtraLight;
+            text-align:center;
+            left:50%;
+            transform:translate(-50%);
+            top:100px;
+            display:none;
+        }
+        #product .crew .image:hover{
+            opacity:0.6;
+            filter:alpha(opcity=60);
+        }
+        
+        #bottom{
+            width:100%;
+            height:100px;
+            margin-top:200px;
+            background:#000;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="bag1">
+        <div class="top">
+            <p class="ftitle font title">hello word</p>
+            <p class="fcontent font text">hello word</p>
+            <div class="accont">
+                <p class="fcontent font " style="margin-top:45px;">hello word</p>
+                <p class="flit font" style="margin-top:15px;margin-bottom:30px;text-align:center;">hello word</p>
+                <input type="text"  class="ficon txt font" style="margin-left:100px;" placeholder="用户名或邮箱" />
+                <input type="text"  class="ficon txt font" placeholder="密码"/>
+                <input type="button"value="SIGH UP"  class="btn" />
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <p class="fcontent font" style="color:#141414; font-weight:500;margin-top:85px;margin-bottom:40px;">hello word</p>
+        <p class="fctitle font " style="color:#141414;margin-bottom:80px;">hello word</p>
+        <div class="feature">
+            <div class="feature1">
+                <div class="image"><img src="images/Iphone Icon.png" /></div>
+                <p class="fcontent font " style="color:#141414; font-weight:500;text-align:left;margin-bottom:10px;">hello word</p>
+                <p class="flist font">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            </div>
+            <div class="feature2">
+                <div class="image"><img src="images/Check Icon.png" /></div>
+                <p class="fcontent font " style="color:#141414; font-weight:500;text-align:left;margin-bottom:10px;">hello word</p>
+                <p class="flist font">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            </div>
+            <div class="feature1">
+                <div class="image"><img src="images/Pencil Icon.png" /></div>
+                <p class="fcontent font " style="color:#141414; font-weight:500;text-align:left;margin-bottom:10px;">hello word</p>
+                <p class="flist font">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            </div>
+            <div class="feature2">
+                <div class="image"><img src="images/Settings Icon.png" /></div>
+                <p class="fcontent font " style="color:#141414; font-weight:500;text-align:left;margin-bottom:10px;">hello word</p>
+                <p class="flist font">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            </div>
+        </div>
+    </div>
+    <div class="bag2">
+        <div class="mask2">
+            <div class="product">
+                <p class="fctitle font " style="margin-bottom:20px;">hello word</p>
+                <p class="fcontent font" style="margin-bottom:40px;text-align:left;">hello wordhello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello wor</p>
+                <input type="button" value="SIGH UP" class="btncheck ficon" />
+                <input type="button" value="SIGH UP" class="btncheck ficon" />
+            </div>
+            <div class="datum">
+                <div class="content">
+                    <p class="font" style="margin-bottom:20px;margin-top:60px;color:#141414;font-size:30px;">资料</p>
+                    <p class="fcontent font" style="margin-bottom:60px;text-align:center;color:#141414;">这里有一些教程、文档或示例，可以帮助你学习</p>
+                    <div class="content1">
+                        <div class="photo1"><img src="images/前端学院设计图_03.png" /></div>
+                        <p class="fphoto font" >教程</p>
+                        <p class="fphocont font" >教程</p>
+                    </div>
+                    <div class="content1">
+                        <div class="photo1"><img src="images/前端学院设计图_05.png" /></div>
+                        <p class="fphoto font">教程</p>
+                        <p class="fphocont font">教程</p>
+                    </div>
+                    <div class="content1">
+                        <div class="photo1"><img src="images/前端学院设计图_05.png" /></div>
+                        <p class="fphoto font">教程</p>
+                        <p class="fphocont font">教程</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product">
+        <p class="fctitle font" style="color:#141414;margin-bottom:90px;margin-top:100px;">hello word</p>
+        <div class="center">
+            <div class="pro">
+                <img src="images/Singleton.png" alt=""/>
+                <p class="flit font" style="margin-top:70px;margin-bottom:30px;text-align:center;">hello wordhello wordhello wordhello wordhello wordhello wordhello wordhello word</p>
+            </div>
+            <div class="pro">
+                <img src="images/Hero.png" />
+                <p class="flit font" style="margin-top:70px;margin-bottom:30px;text-align:center;">hello wordhel</p>
+            </div>
+            <div class="pro">
+                <img src="images/Portland.png" />
+                <p class="flit font" style="margin-top:70px;margin-bottom:30px;text-align:center;">hello wordhel</p>
+            </div>
+
+        </div>
+        <div class="center2">
+            <img src="images/tree.png" width="570" height="350" />
+            <div class="detile">
+                <p class="fcontent font " style="color:#141414; font-weight:500;text-align:left;margin-bottom:10px;">hello word</p>
+                <p class="flist font">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            </div>
+            
+            <div class="detile">
+                <p class="fcontent font " style="color:#141414; font-weight:500;text-align:left;margin-bottom:10px;">hello word</p>
+                <p class="flist font">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            </div>
+            <img src="images/bird.png" width="570" height="350" />
+        </div>
+        <div class="crew">
+            <p class="fctitle font " style="color:#141414;margin-bottom:80px;">Our Awesome Crew</p>
+            <p class="flist font" style="width:700px;color:#141414; font-weight:500;text-align:center;margin:0 auto;margin-bottom:30px;">hello wordhello wordhello wordhello wordhello wordhello wordhello wordrdhello wordhello wordhello wordrdhello wordhello wordhello word</p>
+            <div class="mask" >
+                
+                    <p id="maskid2" class="wenzi">Our title</p>
+                    <p class="ss" style="">Our Awesome Crew</p>
+                    <div class="facebook"></div>
+                    <div class="twitter"></div>
+                    <div class="insta"></div>
+                
+                <img class="image" src="images/张思远大.png" width="470" height="340" /></div>
+            <div class="mask" >
+                
+                    <p id="maskid2" class="wenzi">Our title</p>
+                    <p class="ss" style="">Our Awesome Crew</p>
+                    <div class="facebook"></div>
+                    <div class="twitter"></div>
+                    <div class="insta"></div>
+                
+                <img class="image" src="images/2.png" width="470" height="340" />
+            </div>
+            <div class="mask" >
+                
+                    <p id="maskid2" class="wenzi">Our title</p>
+                    <p class="ss" style="">Our Awesome Crew</p>
+                    <div class="facebook"></div>
+                    <div class="twitter"></div>
+                    <div class="insta"></div>
+                
+                <img class="image" src="images/3.png" width="470" height="340" /></div>
+            <div class="mask" >
+                
+                    <p id="maskid2" class="wenzi">Our title</p>
+                    <p class="ss" >Our Awesome Crew</p>
+                    <div class="facebook"></div>
+                    <div class="twitter"></div>
+                    <div class="insta"></div>
+                
+                <img class="image" src="images/沈大师大_meitu_3.png" width="470" height="340" /></div>
+        </div>
+        <script type="text/javascript">
+            window.onload = function () {
+                Highlight();
+            }
+            function Highlight() {
+                
+                var mask1 = document.getElementsByClassName("mask");
+                for (var i = 0; i < mask1.length; i++) {
+                    mask1[i].onmouseover = function () {
+                        this.children[0].style.display = "block";  //这里用this的原理是什么
+                        this.children[1].style.display = "block";
+                        this.children[2].style.display = "block";
+                        this.children[3].style.display = "block";
+                        this.children[4].style.display = "block";
+                    }
+                    mask1[i].onmouseout = function () {
+                        this.children[0].style.display = "none";
+                        this.children[1].style.display = "none";
+                        this.children[2].style.display = "none";
+                        this.children[3].style.display = "none";
+                        this.children[4].style.display = "none";
+                    }
+                }
+            }
+           
+            
+            //function mouseout1() {
+            //    var out = document.querySelectorAll(".wenzi");
+            //    out.style.display = "none";
+                
+            //}
+            //function mouseover2() {
+                
+            //    var out = document.getElementById("maskid2");
+            //    out.style.display = "block";
+            //}
+            //function mouseout2() {
+            //    var out = document.getElementById("maskid2");
+            //    out.style.display = "none";
+            //}
+            //function mouseover3() {
+
+            //    var out = document.getElementById("maskid3");
+            //    out.style.display = "block";
+            //}
+            //function mouseout3() {
+            //    var out = document.getElementById("maskid3");
+            //    out.style.display = "none";
+            //}
+            //function mouseover4() {
+
+            //    var out = document.getElementById("maskid4");
+            //    out.style.display = "block";
+            //}
+            //function mouseout4() {
+            //    var out = document.getElementById("maskid4");
+            //    out.style.display = "none";
+            //}
+        </script>
+
+    </div>
+    <div id="bottom">
+
+        <p class="fcontent font " style="height:100px;line-height:100px;">电子邮箱：sqiannan@foxmail.com</p>
+    </div>
+</body>
+</html>
